@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 550008580}
   - component: {fileID: 550008579}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Image Detection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -272,6 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedImageManager: {fileID: 550008580}
+  markerObject: {fileID: 1327667209}
 --- !u!114 &550008580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +288,7 @@ MonoBehaviour:
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 550008578}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 0
@@ -619,8 +620,8 @@ Transform:
   m_GameObject: {fileID: 1327667205}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5.76}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
