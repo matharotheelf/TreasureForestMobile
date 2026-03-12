@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: MushroomReference
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4743883572920673295
+  m_GuidHigh: 5345203951742936763
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5756808706340700335
+      m_GuidHigh: 8270474917693109181
+    m_SerializedTextureGuid:
+      m_GuidLow: 2602134696875797521
+      m_GuidHigh: 12698583922728551163
+    m_Size: {x: 0.049, y: 0.049413502}
+    m_SpecifySize: 1
+    m_Name: Mushroom
+    m_Texture: {fileID: 0}
