@@ -23,7 +23,7 @@ public class GameStateMachine : MonoBehaviour
 
         if(crystalDetected)
         {
-            displayText.SetText("Now place each guide in its home.");
+            displayText.SetText("Choose which home belongs to which guide!");
         }
     }
 
@@ -33,7 +33,7 @@ public class GameStateMachine : MonoBehaviour
 
         if (waterfallDetected)
         {
-            displayText.SetText("Now place each guide in its home.");
+            displayText.SetText("Choose which home belongs to which guide!");
         }
     }
 
@@ -44,7 +44,7 @@ public class GameStateMachine : MonoBehaviour
 
         if (waterfallSelected)
         {
-            displayText.SetText("Great! now submit your map selection.");
+            displayText.SetText("Great! now tell the world your choice!");
             submitButton.SetActive(true);
         }
     }
@@ -56,7 +56,7 @@ public class GameStateMachine : MonoBehaviour
 
         if (crystalSelected)
         {
-            displayText.SetText("Great! now submit your map selection.");
+            displayText.SetText("Great! now tell the world your choice!");
             submitButton.SetActive(true);
         }
     }
@@ -64,6 +64,7 @@ public class GameStateMachine : MonoBehaviour
     public void submitMap()
     {
         StartCoroutine("postRequest");
+        displayText.SetText("Waiting for choice to be sent out to the world...");
     }
 
     IEnumerator postRequest()
@@ -95,7 +96,8 @@ public class GameStateMachine : MonoBehaviour
         }
         else
         {
-            displayText.SetText("Map is created. Go play in VR!");
+            displayText.SetText("The world is waiting. GO PLAY IN VR!");
+            submitButton.SetActive(false);
         }
     }
 }

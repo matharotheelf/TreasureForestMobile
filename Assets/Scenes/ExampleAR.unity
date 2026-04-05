@@ -579,6 +579,7 @@ MonoBehaviour:
   guiText: {fileID: 1177948200}
   location: 0
   gameStateMachine: {fileID: 1249831690}
+  selectedMaterial: {fileID: 2100000, guid: 632f7b35add5748afb472c7ad42a2f00, type: 2}
 --- !u!54 &571940471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -634,7 +635,7 @@ RectTransform:
   m_GameObject: {fileID: 580781368}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1617519217}
@@ -980,7 +981,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Welcome to The Magical Cave, scan the map with the camera to begin.
+  m_text: "Welcome to The Magical Cave! Slowly scan the map with the camera to begin.
+    \n\nMake sure the camera is not too far from the map when you scan!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1311,6 +1313,7 @@ MonoBehaviour:
   guiText: {fileID: 1177948200}
   location: 1
   gameStateMachine: {fileID: 1249831690}
+  selectedMaterial: {fileID: 2100000, guid: 632f7b35add5748afb472c7ad42a2f00, type: 2}
 --- !u!54 &1327667211
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1395,7 +1398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Submit Map
+  m_text: Tell the world!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

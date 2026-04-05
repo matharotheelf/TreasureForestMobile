@@ -18,11 +18,14 @@ public class locationCollisionDetector : MonoBehaviour
     [SerializeField]
     GameStateMachine gameStateMachine;
 
+    [SerializeField]
+    Material selectedMaterial;
+
     void OnTriggerEnter(Collider collider)
     {
         if (GameObject.ReferenceEquals(collider.gameObject, flowerColliderObject))
         {
-            gameObject.GetComponent<Renderer>().material.color = new Color(0, 255, 0, 100);
+            gameObject.GetComponent<Renderer>().material = selectedMaterial;
             if (location == 0)
             {
                 gameStateMachine.selectCrystal("flower");
@@ -35,7 +38,7 @@ public class locationCollisionDetector : MonoBehaviour
         }
         else if (GameObject.ReferenceEquals(collider.gameObject, mushroomColliderObject))
         {
-            gameObject.GetComponent<Renderer>().material.color = new Color(0, 255, 0, 100);
+            gameObject.GetComponent<Renderer>().material = selectedMaterial;
             if (location == 0)
             {
                 gameStateMachine.selectCrystal("mushroom");
