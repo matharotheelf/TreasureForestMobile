@@ -580,6 +580,7 @@ MonoBehaviour:
   location: 0
   gameStateMachine: {fileID: 1249831690}
   selectedMaterial: {fileID: 2100000, guid: 632f7b35add5748afb472c7ad42a2f00, type: 2}
+  deselectedMaterial: {fileID: 2100000, guid: be2af6a5c86814301a3ef2754b0231f9, type: 2}
 --- !u!54 &571940471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1314,6 +1315,7 @@ MonoBehaviour:
   location: 1
   gameStateMachine: {fileID: 1249831690}
   selectedMaterial: {fileID: 2100000, guid: 632f7b35add5748afb472c7ad42a2f00, type: 2}
+  deselectedMaterial: {fileID: 2100000, guid: af93f0da09024405a88262ba10114de8, type: 2}
 --- !u!54 &1327667211
 Rigidbody:
   m_ObjectHideFlags: 0

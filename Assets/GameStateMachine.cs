@@ -49,6 +49,18 @@ public class GameStateMachine : MonoBehaviour
         }
     }
 
+    public void deselectCrystal(string character)
+    {
+        crystalSelected = false;
+        crystalCharacter = "";
+
+        if (waterfallSelected)
+        {
+            displayText.SetText("Choose which home belongs to which guide!");
+            submitButton.SetActive(false);
+        }
+    }
+
     public void selectWaterfall(string character)
     {
         waterfallSelected = true;
@@ -58,6 +70,18 @@ public class GameStateMachine : MonoBehaviour
         {
             displayText.SetText("Great! now tell the world your choice!");
             submitButton.SetActive(true);
+        }
+    }
+
+    public void deselectWaterfall(string character)
+    {
+        waterfallSelected = false;
+        waterfallCharacter = "";
+
+        if (crystalSelected)
+        {
+            displayText.SetText("Choose which home belongs to which guide!");
+            submitButton.SetActive(false);
         }
     }
 
